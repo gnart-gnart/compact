@@ -1,0 +1,4 @@
+#ifndef COMPACT_WINDOW_H
+#define COMPACT_WINDOW_H
+
+#endif //COMPACT_WINDOW_H
