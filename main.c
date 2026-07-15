@@ -1,10 +1,11 @@
-#include <stdio.h>
 #include "raylib.h"
-#include "raymath.h"
-
-
+#include "window.h"
 
 int main(void) {
-    printf("Hello, World!\n");
+    openWindow();
+    while (!WindowShouldClose()) {
+
+    }
+    closeWindow();
     return 0;
 }

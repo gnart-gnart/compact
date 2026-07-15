@@ -1,12 +1,11 @@
 #include "window.h"
-
 #include <raylib.h>
 
-void startWindow() {
+void openWindow() {
     InitWindow(windowWidth, windowHeight, "gnart's game");
     SetTargetFPS(60);
 }
 
-void stopWindow() {
+void closeWindow() {
     CloseWindow();
 }

@@ -8,4 +8,14 @@ add_executable(compact main.c
         window.h)
 
 find_package(raylib CONFIG REQUIRED)
-target_link_libraries(compact PRIVATE raylib)
+find_package(glfw3 CONFIG REQUIRED)
+target_link_libraries(compact PRIVATE raylib glfw)
+
+if(APPLE)
+    target_link_libraries(compact PRIVATE
+            "-framework Cocoa"
+            "-framework IOKit"
+            "-framework CoreVideo"
+            "-framework OpenGL"
+    )
+endif()
