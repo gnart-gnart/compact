@@ -4,8 +4,6 @@ project(compact C)
 set(CMAKE_C_STANDARD 23)
 
 add_executable(compact main.c
-        core/window.c
-        core/window.h
         core/game.c
         core/game.h)
 

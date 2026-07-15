@@ -1,11 +1,8 @@
-#include "raylib.h"
-#include "core/window.h"
+#include "core/game.h"
 
 int main(void) {
-    openWindow();
-    while (!WindowShouldClose()) {
-
-    }
-    closeWindow();
+    gameInitialize();
+    gameRun();
+    gameTerminate();
     return 0;
 }
