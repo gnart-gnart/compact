@@ -1,5 +1,5 @@
 #include "raylib.h"
-#include "window.h"
+#include "core/window.h"
 
 int main(void) {
     openWindow();

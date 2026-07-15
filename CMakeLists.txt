@@ -4,8 +4,10 @@ project(compact C)
 set(CMAKE_C_STANDARD 23)
 
 add_executable(compact main.c
-        window.c
-        window.h)
+        core/window.c
+        core/window.h
+        core/game.c
+        core/game.h)
 
 find_package(raylib CONFIG REQUIRED)
 find_package(glfw3 CONFIG REQUIRED)
